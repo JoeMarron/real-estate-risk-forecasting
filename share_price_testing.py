@@ -5,6 +5,8 @@ Created on Mon Jul 24 20:11:46 2023
 @author: joema
 """
 
+# testing chnages
+
 import yfinance as yf
 import matplotlib.pyplot as plt
 
