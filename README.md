@@ -44,7 +44,7 @@ The below back-testing plot shows that the VaR calculated using stock data for H
 
 ![example_VaR](https://github.com/joemarron/real-estate-risk-forecasting/blob/main/Example_GJR_Garch_FHS_VaR.png)
 
-## Continued Work
+## TBC
 After implemntation of a deep learning model and upon completion of my dissertation, I will update this README with a summary of my findings.
 
 
