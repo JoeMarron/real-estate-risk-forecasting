@@ -42,7 +42,7 @@ def gjr_garch_var(p=1, o=1, q=1, prices=None, first_obs = None,
 The below back-testing plot shows that the VaR calculated using stock data for HWG.L from 2016 to 2020 forecasts the 95% and 99% VaR relatively well for 2021/22 with a 95% breach of 1.79% and no breaches of the 99% CI. 
 
 
-![example_VaR](https://github.com/joemarron/real-estate-risk-forecasting/blob/main/Example_GJR_Garch_FHS_VaR.png)
+![example_VaR](https://github.com/joemarron/real-estate-risk-forecasting/blob/main/Example_GJR_Garch_FHS_VaR%20-%20HWG.png)
 
 ## TBC
 After implemntation of a deep learning model and upon completion of my dissertation, I will update this README with a summary of my findings.
