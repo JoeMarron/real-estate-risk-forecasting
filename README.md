@@ -1,11 +1,12 @@
 
 # Deep Learning for VaR Predictions in the UK Residential Real Estate Market
 
+For my MSc dissertation, I explored if deep learning models could replicate traditional Value-at-Risk (VaR) calculations within the UK property industry. 
+
+Specifically, I used [UK House Price Index data](https://www.gov.uk/government/collections/uk-house-price-index-reports) to calculate VaR using a *traditional* method (Filtered Historical Simulation VaR using GJR-GARCH), with which I then trained Artificial Neural  (ANN), Recurrent Neural Networks (RNN) and an RNN with an LSTM layer. The below shows results of a predicted VaR (95% CI) compared against the traditionally calculated VaR and the actual returns, indicating breaches of the VaR for both actual and predicted.
+
+#### VaR Backtest Plot for Average English Properties (Actual v Predictions)
 ![example_VaR](https://github.com/joemarron/real-estate-risk-forecasting/blob/main/average_England_ANN_var_prediction_backtest.png)
-
-For my MSc dissertation, I am exploring if deep learning models can improve accuracy of traditional Value-at-Risk (VaR) calculations within the UK property industry. 
-
-Specifically, I will be using share price data for several UK REITs to calculate VaR using a *traditional* method (Filtered Historical Simulation VaR using GJR-GARCH). I will train a Deep Feed-Forward Neural Network (DFFNN) on thousands of traditionally calculated VaR figures for different time windows/confidence interval combinations, combined with returns data for different data sources that can have an effect on the property industry (GDP, Inflation, House Price Index, etc.).
 
 I will then assess how the model performs, after hyperparameter optimisation, and compare to traditional methods.
 
