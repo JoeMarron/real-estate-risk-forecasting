@@ -1,7 +1,7 @@
 
 # Deep Learning for VaR Predictions in the UK Residential Real Estate Market
 
-![example_VaR](https://github.com/joemarron/real-estate-risk-forecasting/blob/main/average_England_ANN_var_prediction_backtest_plot.png)
+![example_VaR](https://github.com/joemarron/real-estate-risk-forecasting/blob/main/average_England_ANN_var_prediction_backtest.png)
 
 For my MSc dissertation, I am exploring if deep learning models can improve accuracy of traditional Value-at-Risk (VaR) calculations within the UK property industry. 
 
