@@ -8,6 +8,7 @@ Specifically, I used [UK House Price Index data](https://www.gov.uk/government/c
 <h4 align="center">
 VaR Backtest Plot for Average English Properties (Actual v Predictions)
 </h4>
+
 ![example_VaR](https://github.com/joemarron/real-estate-risk-forecasting/blob/main/average_England_ANN_var_prediction_backtest.png)
 
 I will then assess how the model performs, after hyperparameter optimisation, and compare to traditional methods.
