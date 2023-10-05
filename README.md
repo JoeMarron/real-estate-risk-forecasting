@@ -1,7 +1,8 @@
 
-# Enhancing Estimations of Future Risk for UK REITs using Deep Learning
+# Deep Learning for VaR Predictions in the UK Residential Real Estate Market
 
-***Work in Progress*** \
+![example_VaR](https://github.com/joemarron/real-estate-risk-forecasting/blob/main/Example_GJR_Garch_FHS_VaR%20-%20HWG.png)
+
 For my MSc dissertation, I am exploring if deep learning models can improve accuracy of traditional Value-at-Risk (VaR) calculations within the UK property industry. 
 
 Specifically, I will be using share price data for several UK REITs to calculate VaR using a *traditional* method (Filtered Historical Simulation VaR using GJR-GARCH). I will train a Deep Feed-Forward Neural Network (DFFNN) on thousands of traditionally calculated VaR figures for different time windows/confidence interval combinations, combined with returns data for different data sources that can have an effect on the property industry (GDP, Inflation, House Price Index, etc.).
