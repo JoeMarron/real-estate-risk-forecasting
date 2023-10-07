@@ -9,8 +9,14 @@ Specifically, I used [UK House Price Index data](https://www.gov.uk/government/c
 VaR Backtest Plot for Average English Properties (Actual v ANN Predictions)
 </h4>
 
-![example_VaR](https://github.com/joemarron/real-estate-risk-forecasting/blob/main/average_England_ANN_var_prediction_backtest.png)
+![example_VaR](https://github.com/joemarron/real-estate-risk-forecasting/blob/main/plots/average_England_ANN_var_prediction_backtest.png)
 
+## Exploratory Data Analysis
+
+![price_hist](https://github.com/joemarron/real-estate-risk-forecasting/blob/main/plots/average_detached_price_lineplot.png)
+![price_hist](https://github.com/joemarron/real-estate-risk-forecasting/blob/main/plots/average_price_returns.png)
+
+## Results Summary
 
 
 
