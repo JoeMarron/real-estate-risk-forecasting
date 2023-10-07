@@ -13,8 +13,8 @@ VaR Backtest Plot for Average English Properties (Actual v ANN Predictions)
 
 ## Exploratory Data Analysis
 
-![price_hist](https://github.com/joemarron/real-estate-risk-forecasting/blob/main/plots/average_detached_price_lineplot.png)
-![price_hist](https://github.com/joemarron/real-estate-risk-forecasting/blob/main/plots/average_price_returns.png)
+![price_hist](https://github.com/joemarron/real-estate-risk-forecasting/blob/main/plots/average_detached_lineplot.png)
+![price_hist](https://github.com/joemarron/real-estate-risk-forecasting/blob/main/plots/average_returns.png)
 
 ## Results Summary
 
