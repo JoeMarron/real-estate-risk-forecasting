@@ -35,7 +35,24 @@ For VaR calculations we need the returns from period to period, in this case the
 Average Property Returns Across English Regions
 </h4>
 
-![price_hist](https://github.com/joemarron/real-estate-risk-forecasting/blob/main/plots/average_returns.png)
+![ret_hist](https://github.com/joemarron/real-estate-risk-forecasting/blob/main/plots/average_returns.png)
+
+## Modelling
+To optimise the models for each Region/Property Type combination, we carried out a random search cross-validation process, optimising for the below hyperparameters.
+| Hyperparameter       | Values           |
+| -------------------- | ---------------- |
+| Hidden nodes         | [32, 64, 128]    |
+| Learning rate        | [0.01, 0.001]    |
+| No. of hidden layers | [3, 4]           |
+| Drop out rate        | [0.05, 0.1, 0.2] |
+
+The epochs remained the same for each at 200, however early stopping was implemented as to reduce the computation time where possible, which can be seen in the below plot which only reached 124 epochs before the loss converged on an approximate optimum. The scaling of the data was also done within the ML modelling pipeline.
+
+<h4 align="center">
+Average English Property ANN Optimal Model Loss Plot (MAE, MSE, RMSE)
+</h4>
+
+![loss_plot](https://github.com/joemarron/real-estate-risk-forecasting/blob/main/plots/average_England_ANN_optimal_model_loss_plt.png)
 
 ## Results Summary
 
