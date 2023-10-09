@@ -38,7 +38,7 @@ Average Property Returns Across English Regions
 ![ret_hist](https://github.com/joemarron/real-estate-risk-forecasting/blob/main/plots/average_returns.png)
 
 ## Modelling
-To optimise the models for each Region/Property Type combination, we carried out a random search cross-validation process, optimising for the below hyperparameters.
+To optimise the models for each region/property Type combination, we carried out a random search cross-validation process, optimising for the below hyperparameters.
 | Hyperparameter       | Values           |
 | -------------------- | ---------------- |
 | Hidden nodes         | [32, 64, 128]    |
@@ -46,7 +46,7 @@ To optimise the models for each Region/Property Type combination, we carried out
 | No. of hidden layers | [3, 4]           |
 | Drop out rate        | [0.05, 0.1, 0.2] |
 
-The epochs remained the same for each at 200, however early stopping was implemented as to reduce the computation time where possible, which can be seen in the below plot which only reached 124 epochs before the loss converged on an approximate optimum. The scaling of the data was also done within the ML modelling pipeline.
+The epochs remained the same for each at 200, however early stopping was implemented as to reduce the computation time where possible, which can be seen in the below plot which only reached 124 epochs before the loss converged on an approximate optimum. The scaling of the data was also done within the ML modelling pipeline, using StandardScaler which transforms the data to have amean of 0 and a standard deviation of 1.
 
 <h4 align="center">
 Average English Property ANN Optimal Model Loss Plot (MAE, MSE, RMSE)
@@ -55,6 +55,15 @@ Average English Property ANN Optimal Model Loss Plot (MAE, MSE, RMSE)
 ![loss_plot](https://github.com/joemarron/real-estate-risk-forecasting/blob/main/plots/average_England_ANN_optimal_model_loss_plt.png)
 
 ## Results Summary
+The results of the modelling demonstrated varying results across each region and property type. The best RMSE acheived for each of these models can be seen in the table below. The closest replication of the VaR calculation achieved was for the average property type in London with an RMSE of 0.277. London in general provided the closest predictions to the VaR actual calculations with a mean RMSE of 0.3381. 
+
+| region                   | average | detached | flat   | semi_detached | terraced |
+| ------------------------ | ------- | -------- | ------ | ------------- | -------- |
+| England                  | 0.3273  | 0.3700   | 0.5400 | 0.4043        | 0.4350   |
+| London                   | 0.2770  | 0.3973   | 0.3680 | 0.2977        | 0.3503   |
+| South West               | 0.4693  | 0.4833   | 0.4653 | 0.4150        | 0.3650   |
+| West Midlands            | 0.8390  | 0.4957   | 0.4860 | 0.7590        | 0.6337   |
+| Yorkshire and The Humber | 0.4313  | 0.3943   | 0.5493 | 0.4933        | 0.4113   |
 
 
 
