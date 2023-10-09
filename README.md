@@ -65,5 +65,13 @@ The results of the modelling demonstrated varying results across each region and
 | West Midlands            | 0.8390  | 0.4957   | 0.4860 | 0.7590        | 0.6337   |
 | Yorkshire and The Humber | 0.4313  | 0.3943   | 0.5493 | 0.4933        | 0.4113   |
 
+To quantify the usability of the VaR models, we use the Kupiec test to backtest the actual VaR figures and the predicted ones. To summarise, we are looking for a value > 0.05 to support the models usability. In this case, the actual number of exceptions is roughly consistent with what would be expected at the 95% confidence level. However, it's essential to note that a p-value greater than 0.05 doesn't necessarily mean the model is perfect. It simply indicates that it's within an acceptable range of accuracy. With this being said, the average performance across each regions NN models produced an acceptable model - however the actual VaR calculations using Filtered Historical Simulation produces unsatisfactory models on average for London and West Midlands.
 
+| region                   | act_pval | pred_pval |
+| ------------------------ | -------- | --------- |
+| England                  | 0.1840   | 1.8118    |
+| London                   | 0.0045   | 0.0678    |
+| South West               | 0.5875   | 0.1816    |
+| West Midlands            | 0.0088   | 1.8087    |
+| Yorkshire and The Humber | 0.4893   | 0.3903    |
 
