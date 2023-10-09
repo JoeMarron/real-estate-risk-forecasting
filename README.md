@@ -26,7 +26,9 @@ This plot demonstrates the difference in average detached property prices across
 <h4 align="center">
 Average Detached Property Prices Across English Regions
 </h4>
+
 ![price_hist](https://github.com/joemarron/real-estate-risk-forecasting/blob/main/plots/average_detached_lineplot.png)
+
 ![price_hist](https://github.com/joemarron/real-estate-risk-forecasting/blob/main/plots/average_returns.png)
 
 ## Results Summary
