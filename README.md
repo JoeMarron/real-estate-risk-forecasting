@@ -21,13 +21,19 @@ Below shows the general structure of the dataset with the columns we used in thi
 | 01/02/1995 | East Midlands | 46051.57     | 68634.75      | 42051.34          | 33423.75      | 31600.06  |
 | 01/03/1995 | East Midlands | 45383.82     | 67658.6       | 41388.96          | 33005.72      | 30958.9   |
 
-This plot demonstrates the difference in average detached property prices across different regions in the UK. It is clear how the regions have a drastic impact on the prices of properties, with London average prices nearly double the national average.
+This plot demonstrates the difference in average detached property prices across different regions in the UK. It is clear how the regions have a drastic impact on the prices of properties, with London average prices (green) over double the national average (red).
 
 <h4 align="center">
 Average Detached Property Prices Across English Regions
 </h4>
 
 ![price_hist](https://github.com/joemarron/real-estate-risk-forecasting/blob/main/plots/average_detached_lineplot.png)
+
+For VaR calculations we need the returns from period to period, in this case the return from one month to the next in the HPI. Hence, the below plot shows the returns for each region for the average property type as an example. The differences in the volatility clustering and distributions is clear - for this project scope we used a subset of these regions, namely London, South West, West Midlands and Yorkshire and The Humber as well as the English national averages. This was to represent England fairly both geographically and statistically whilst making the work managable in terms of model training times. The results need to be considered in this context, with possibly improved results when using the full dataset.
+
+<h4 align="center">
+Average Property Returns Across English Regions
+</h4>
 
 ![price_hist](https://github.com/joemarron/real-estate-risk-forecasting/blob/main/plots/average_returns.png)
 
